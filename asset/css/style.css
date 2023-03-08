@@ -43,7 +43,7 @@ body {
   width: 1140px;
 }
 
-div:nth-child(2) p {
+.image-columns p {
   text-align: center;
   font-size: 21px;
   width: 1140px;
@@ -60,11 +60,11 @@ button {
   border-radius: 4px;
   /* transition: all 0.5s; */
 }
-button:hover {
+.green-container button:hover {
   background-color: rgb(40, 97, 154);
   cursor: pointer;
 }
-button:active {
+.green-container button:active {
   background-color: rgb(28, 73, 117);
 }
 
@@ -75,7 +75,7 @@ button:active {
   /* align-items: center; */
   align-content: space-between;
   width: 1140px;
-  height: 491.4px;
+  /* height: 491.4px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -106,23 +106,81 @@ h1 small {
   text-align: center;
 }
 
-#dummy-images > div {
-  float: left;
+#dummy-images-rows {
+  width: 1140px;
   height: 466.4px;
-  margin-bottom: 25px;
-  /* padding: 0px 15px; */
-  /* width: 30%; */
   display: flex;
-  flex-direction: column;
-  box-sizing: content-box;
+  margin-bottom: 25px;
 }
 
-#dummy-images img {
+.image-columns {
+  /* flex: 33%; */
+  text-align: center;
+  width: 360px;
+}
+
+.image-columns p:nth-of-type(n) {
+  width: 360px;
+  font-size: 14px;
+  color: #959595;
+}
+
+.image-columns a {
+  color: #23527c;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.image-columns a:hover {
+  color: #23527c;
+  text-decoration: underline;
+}
+#middle-image {
+  padding: 0px 30px;
+}
+
+#dummy-images-rows img {
   border-radius: 6px;
   height: 300px;
   width: 360px;
-  box-sizing: content-box;
+  /* box-sizing: content-box; */
+  /* display: flex; */
+}
+
+/* Orange class */
+.orange {
+  background-color: #daa520;
+  height: 370.4px;
+  padding: 30px 0px;
   display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.orange-columns {
+  height: 310.4px;
+  width: 330px;
+  /* padding: 30px 15px; */
+  padding: 30px 30px;
+}
+.orange-columns img {
+  border-radius: 50%;
+}
+.orange-columns button {
+  background-color: #fff;
+  border: 1px solid transparent;
+  color: black;
+}
+.orange-columns button:hover {
+  background-color: #e6e6e6;
+  border: 1px solid #c9c9c9;
+  cursor: pointer;
+}
+.orange-columns > h2 {
+  font-size: 24px;
+  font-weight: 500;
 }
 
 /* Footer section css */
